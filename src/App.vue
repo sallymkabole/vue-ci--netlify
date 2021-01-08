@@ -19,24 +19,24 @@
 
 <script>
 export default {
-  name: "App",
+  name: 'App',
   data() {
     return {
-      task: "",
-      todos: []
+      task: '',
+      todos: [],
     };
   },
   methods: {
     addTask() {
-      if (this.task !== "") {
+      if (this.task !== '') {
         this.todos.push(this.task);
-        this.task = "";
+        this.task = '';
       }
     },
     deleteTask(todoItem) {
-      this.todos = this.todos.filter(item => item !== todoItem);
-    }
-  }
+      this.todos = this.todos.filter((item) => item !== todoItem);
+    },
+  },
 };
 </script>
 
